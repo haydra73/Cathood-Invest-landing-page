@@ -1,0 +1,180 @@
+.header {
+      padding: 2rem;
+      
+      @media only screen and (max-width: $bp-largest) {
+            overflow: hidden;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+            padding: 1rem;
+      }
+}
+
+.intro {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10rem;
+
+      &__left {
+            margin-left: 4rem;
+            margin-top: 20rem;
+            position: relative;
+            line-height: 1.2;
+            transition: all 0.2s;
+
+            @media only screen and (max-width: $bp-medium) {
+                  max-width: 80%;
+                  margin-top: 20rem;
+                  margin-left: auto;
+                  margin-right: auto;
+            }
+
+            img {
+                  position: absolute;
+                  top: -3rem;
+                  left: -2rem;
+            }
+            h1 span {
+                  font-weight: 600;
+            }
+
+            p {
+                  margin-top: 2rem;
+                  margin-bottom: 3rem;
+                  span {
+                        font-weight: 600;
+                  }
+            }
+      }
+
+      &__function {
+            margin-top: 2rem;
+      }
+
+      &__right {
+            position: relative;
+      }
+
+      &__figure {
+            width: 100%;
+            position: relative;
+
+            
+
+           
+      }
+
+      &__figure::before {
+            content: "";
+            max-width: 100%;
+            width: 58rem;
+            height: 100%;
+            background-image: url(../img/wavy-bg-head.png);
+            background-position: center;
+            background-size: 140%;
+
+            position: absolute;
+            top: 5.3rem;
+            left: 6.8rem;
+            z-index: -99;
+
+            @media only screen and (max-width: $bp-large) {
+                  left: 4.6rem;
+                  top: 3.6rem;
+            }
+            @media only screen and (max-width: $bp-medium) {
+                  display: none;
+            }
+      } 
+      &__figure::after {
+            content: "";
+            max-width: 100%;
+            width: 20rem;
+            height: 100%;
+            background-image: url(../img/money.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            position: absolute;
+            top: -4rem;
+            left: 6rem;
+            z-index: -99;
+
+
+
+            @media only screen and (max-width: $bp-large) {
+                  left: 3rem;
+                  top: 0rem;
+                  width: 12rem;
+            }
+            @media only screen and (max-width: $bp-medium) {
+                  display: none;
+            }
+      } 
+
+      &__img {
+            max-width: 56rem;
+            transition: all 0.2s;
+            position: relative;
+
+            @media only screen and (max-width: $bp-large) {
+                  width: 40rem;
+            }
+            @media only screen and (max-width: $bp-medium) {
+                  display: none;
+            }
+      }
+
+      &__img-float--1 {
+            width: 8rem;
+            position: absolute;
+            top: 30rem;
+            left: 5rem;
+            animation: upanddown infinite ease-in-out 3s;
+            @media only screen and (max-width: $bp-medium) {
+                  display: none;
+            }
+      }
+      &__img-float--2 {
+            width: 8rem;
+            position: absolute;
+            right: -2rem;
+            top: 10rem;
+            animation: upanddown infinite ease-in-out 3s 2s;
+            @media only screen and (max-width: $bp-medium) {
+                  display: none;
+            }
+
+            @media only screen and (max-width: $bp-largest) {
+                  top: 10rem;
+            }
+      }
+      &__img-float--3 {
+            width: 16rem;
+            position: absolute;
+            bottom: -10rem;
+            right: 0rem;
+            animation: upanddown infinite ease-in-out 2s;
+            @media only screen and (max-width: $bp-medium) {
+                  display: none;
+            }
+
+            @media only screen and (max-width: $bp-largest) {
+                  right: 5rem;
+            }
+      }
+}
+
+@keyframes upanddown {
+      0% {
+            transform: translateY(0rem);
+      }
+      50% {
+            transform: translateY(-0.5rem);
+      }
+      100% {
+            transform: translateY(0rem);
+      }
+}

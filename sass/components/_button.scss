@@ -1,0 +1,92 @@
+//////// NAV BUTTON/////////
+
+.btn {
+      border: none;
+      padding: 1.2rem 2.5rem;
+      color: #fff;
+      background-color: $color-primary;
+      border-radius: 50rem;
+      font-weight: 600;
+      font-size: 1.8rem;
+      cursor: pointer;
+      font-family: $font-primary;
+
+      @media only screen and (max-width: $bp-small) {
+            padding: 1rem 1.5rem;
+            font-size: 1.6rem;
+      }
+}
+
+//////// HEADER BUTTON ///////
+
+.btn--wave {
+      display: inline-block;
+      border: none;
+      padding: 1.2rem 2.5rem;
+      color: #fff;
+      background-color: $color-primary;
+      border-radius: 50rem;
+      font-weight: 600;
+      font-size: 1.8rem;
+      position: relative;
+      cursor: pointer;
+      font-family: $font-primary;
+      
+
+      &::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            height: 5.8rem;
+            width: 5.8rem;
+            border-radius: 50%;
+            background-color: $color-grey-light;
+            box-shadow: 0 0 0 .1rem $color-primary,
+            0 0 0 .6rem $color-grey-light,
+            0 0 0 .7rem rgba($color-primary, .75),
+            0 0 0 1.2rem $color-grey-light,
+            0 0 0 1.3rem rgba($color-primary, .4),
+            0 0 0 1.8rem $color-grey-light,
+            0 0 0 1.9rem rgba($color-primary, .2),
+            ;
+            top: -.6rem;
+            left: -.6rem;
+            z-index: -1;
+      }
+}
+
+////// HEADER CTA BUTTON////////
+
+.btn--inline:link,
+.btn--inline:visited {
+      margin: 1rem;
+      text-decoration: none;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: $color-primary;
+      cursor: pointer;
+
+      i {
+            font-size: 1.2rem;
+            transition: all.2s;
+      }
+}
+
+.btn--inline:hover i {
+      transform: translateX(.2rem);
+}
+
+
+//////// qr card button ////////
+
+.copy-address{
+      font-family: inherit;
+      font-size: 1.6rem;
+      font-weight: 600;
+      padding: 1.2rem 2.5rem;
+      border: none;
+      background-color: $color-primary;
+      color: white;
+      border-radius: 1rem;
+      cursor: pointer;
+}

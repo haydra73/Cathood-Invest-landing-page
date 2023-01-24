@@ -1,0 +1,48 @@
+.address {
+      flex: 0 0 40%;
+
+      display: flex;
+      align-items: center;
+      transition: all 0.2s;
+
+      &__input {
+            font-family: inherit;
+            font-size: 2rem;
+            border: 1px solid $color-primary;
+            color: inherit;
+            padding: 1.5rem 3rem;
+            border-radius: 1rem;
+            width: 100%;
+            transition: all 0.4s;
+            margin-right: -4rem;
+
+            @media only screen and (max-width: $bp-small) {
+                 margin-top: 1rem;
+            }
+            
+
+
+            &:focus {
+                  outline: none;
+                  background-color: var(--color-grey-light-3);
+                  
+            }
+      }
+
+      &__button {
+            border: none;
+            color: $color-primary;
+            font-size: 3rem;
+            transition: all 0.2s;
+            background: none;
+            position: relative;
+
+            &:focus {
+                  outline: none;
+            }
+
+            &:active {
+                  transform: translateY(1px);
+            }
+      }
+}

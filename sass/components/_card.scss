@@ -1,0 +1,49 @@
+////RULES PHONE SMS ///////
+
+.card {
+      width: 34rem;
+      height: 8rem;
+      margin: .5rem;
+      border-radius: 1.5rem;
+      box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(to right top, rgba(194, 194, 194, 0.223), rgba(255, 255, 255, 0.156));
+      border-top: 1px solid rgba(#fff, 0.5);
+      border-left: 1px solid rgba(#fff, 0.5);
+      backdrop-filter: blur(10px);
+      -moz-backdrop-filter: blur(10px);
+      justify-self: center;
+      padding: 1rem;
+
+      &__content {
+
+            display: flex;
+            align-items: center;
+            color: white;
+
+            h3 {
+                  font-size: 2rem;
+            }
+            p {
+                  font-size: 1.2rem;
+            }
+      }
+}
+
+.card-1 {
+      margin-left: auto;
+}
+
+.content__details {
+      margin-left: 1rem;
+      h4 {
+            font-size: 1.6rem;
+      }
+}
+
+.card-op {
+      opacity: 0.5;
+}

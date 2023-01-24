@@ -1,0 +1,84 @@
+.count-prize {
+      display: flex;
+      
+}
+
+.count-bd {
+      border-right: 2px solid #fff;
+      @media only screen and (max-width: $bp-medium) {
+            border-right: none;
+      }
+}
+
+.count {
+      padding: 4rem;
+
+      @media only screen and (max-width: $bp-medium) {
+            
+            margin-top: 3rem;
+            padding: 4rem;
+      }
+}
+.count-1 {
+      padding: 4rem;
+
+      @media only screen and (max-width: $bp-medium) {
+            display: none;
+      }
+}
+
+.calculator {
+      margin: 1rem;
+
+      @media only screen and (max-width: $bp-medium) {
+            
+            margin: 0;
+      }
+      &__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 2rem 0;
+      }
+
+      &__area {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 2rem 0;
+
+            @media only screen and (max-width: $bp-medium) {
+            
+                  justify-content: space-between;
+            }
+      }
+
+      &__input {
+            margin-left: .5rem;
+            border: 1px solid white;
+            outline: none;
+            width: 20%;
+            background-color: rgba($color-primary-light, .7);
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            color: white;
+            font-size: 2rem;
+            font-weight: 600;
+
+            &::placeholder {
+                  color: $color-grey-light;
+                  font-weight: 600;
+                  text-align: center;
+            }
+      }
+
+      &__result {
+            display: flex;
+            align-items: center;
+
+            svg {
+                  fill: $color-grey;
+                  margin-top: -.5rem;
+            }
+      }
+}

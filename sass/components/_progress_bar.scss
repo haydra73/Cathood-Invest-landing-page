@@ -1,0 +1,95 @@
+.hurry {
+
+
+      @media only screen and (max-width: $bp-small) {
+           padding: 2rem;
+           line-height: 1.2;
+      }
+      
+      &__skill {
+          
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 2rem;
+
+            @media only screen and (max-width: $bp-large) {
+                  margin-left: 0;
+             }
+
+            circle {
+                  fill: none;
+                  stroke: url(#Color);
+                  stroke-width: 1.5rem;
+                  stroke-dasharray: 772;
+                  stroke-dashoffset: 772;
+
+                  animation: anim 2s linear forwards;
+
+                  @media only screen and (max-width: $bp-small) {
+                        stroke-width: 1rem;
+                  }
+            }
+
+            svg {
+                  position: absolute;
+                  top: 51%;
+                  left: 50.5%;
+                  transform: translate(-50%, -50%);
+            }
+      }
+
+      &__outer {
+           
+            height: 25rem;
+            width: 25rem;
+            border-radius: 50%;
+            padding: 2rem;
+
+            @media only screen and (max-width: $bp-small) {
+                  margin-top: 4px;
+            }
+           
+      }
+
+      &__inner {
+            height: 21rem;
+            width: 21rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 50%;
+            box-shadow: 0 0 0 -1rem $color-primary, 0 0 0 1.5rem #fff, 0 0 0 1.6rem rgba($color-primary, 0.6),
+                  0 0 0 3.6rem #fff, 0 0 0 3.7rem rgba($color-primary, 0.4), 0 0 0 6.3rem #fff,
+                  0 0 0 6.4rem rgba($color-primary, 0.2);
+
+            @media only screen and (max-width: $bp-small) {
+                  box-shadow: 0 0 0 -1rem $color-primary, 0 0 0 1.5rem #fff, 0 0 0 1.6rem rgba($color-primary, 0.6);
+                 
+            }
+      }
+
+      &__content {
+            text-align: center;
+            line-height: 1.2;
+
+            h3 {
+                  margin-top: 1rem;
+                  font-size: 2.4rem;
+                  color: $color-grey;
+            }
+            p {
+                  font-size: 1.8rem;
+                  color: $color-grey;
+                  font-weight: 400;
+            }
+      }
+}
+
+@keyframes anim {
+      100% {
+            stroke-dashoffset: 200;
+      }
+}

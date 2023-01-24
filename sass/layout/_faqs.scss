@@ -1,0 +1,72 @@
+.faqs {
+      margin-top: 10rem;
+      padding: 0 3rem;
+      margin-bottom: 10rem;
+}
+
+.faq {
+      margin: 0 auto;
+      text-align: center;
+      &__title {
+            font-size: 3.6rem;
+            color: $color-primary;
+      }
+
+      &__details {
+            font-weight: 600;
+            color: $color-grey;
+            font-size: 1.8rem;
+            margin-bottom: 4rem;
+      }
+}
+
+.accordion-toggle {
+      display: flex;
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 3rem;
+      background-image: linear-gradient(to left, transparent, $color-primary);
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: 1rem 0;
+      border-radius: 2rem;
+      padding: 0.1rem;
+      text-decoration: none;
+      color: $color-grey;
+      padding: 0.8rem 3.6rem;
+      border-radius: 1rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 100;
+}
+
+.accordion-toggle::after {
+      content: "";
+      height: 94%;
+      width: 98%;
+      position: absolute;
+      top: 3%;
+      left: 0.2rem;
+      z-index: -1005;
+      background-color: $color-grey-light;
+      border-radius: 1rem;
+}
+
+.accordion-content {
+      display: none;
+      font-size: 1.6rem;
+      color: $color-grey;
+      padding: 1.6rem;
+}
+
+.accordion-content.active {
+      display: block;
+}
+
+.accordion-arrow.active {
+      transform: rotate(180deg);
+}
+

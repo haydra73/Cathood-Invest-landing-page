@@ -1,0 +1,75 @@
+////// HURRY SECTION LAYOUT ////////
+
+.hurry {
+      margin-top: 15rem;
+      background-color: white;
+      border-radius: 2rem;
+      padding: 1rem;
+      
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      @media only screen and (max-width: $bp-large) {
+            flex-direction: column;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            padding-top: 6rem;
+            padding-left: 5rem;
+            padding-right: 3rem;
+      }
+      @media only screen and (max-width: $bp-medium) {
+            line-height: 1.4;
+            margin-top: 10rem;
+      }
+
+      /////// RIGHT SECTION OF THE HURRY CARD ////////
+
+      &__inputs {
+            padding: 6rem 0;
+            width: 64%;
+            display: flex;
+            flex-direction: column;
+
+            @media only screen and (max-width: $bp-large) {
+                  width: 100%;
+            }
+            @media only screen and (max-width: $bp-small) {
+                  padding: 3rem 0;
+            }
+      }
+
+      &__waiting {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            align-self: center;
+            margin-top: 2rem;
+
+            @media only screen and (max-width: $bp-small) {
+                  flex-direction: column;
+
+                  p {
+                        font-size: 1.6rem;
+                  }
+            }
+      }
+}
+
+/* Just to play with animations */
+
+.copiedtext {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(-1em);
+      color: $color-primary;
+      transition: all 0.5s;
+}
+.copied .copiedtext {
+      opacity: 1;
+      transform: translateY(-2em);
+}

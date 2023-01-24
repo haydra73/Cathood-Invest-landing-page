@@ -1,0 +1,197 @@
+//RULES SECTION/////////////
+
+.rules {
+      margin-top: -10rem;
+      height: auto;
+      position: relative;
+      margin-bottom: 15rem;
+      padding-bottom: 30rem;
+      padding-top: 15rem;
+      overflow: hidden;
+
+      @media only screen and (max-width: $bp-largest) {
+            margin-bottom: 30rem;
+      }
+      @media only screen and (max-width: $bp-large) {
+            margin-bottom: 0;
+            padding-bottom: 5rem;
+      }
+
+      &::before {
+            content: "";
+            max-width: 100%;
+            width: 192rem;
+            height: 100%;
+            position: absolute;
+            background-image: url(../img/phone.png);
+            background-position: bottom -35rem right 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: 20rem;
+            top: 0;
+            z-index: -100;
+            left: 50%;
+            transform: translate(-50%);
+            margin-left: 2rem;
+
+            @media only screen and (max-width: $bp-large) {
+                  background-position: bottom -12rem right 50%;
+                  margin-left: 0;
+            }
+            @media only screen and (max-width: $bp-medium) {
+                  background-position: bottom 0rem right 50%;
+            }
+            @media only screen and (max-width: $bp-small) {
+                  background-position: bottom 0rem right 51%;
+            }
+      }
+
+      &__main {
+            margin-top: 0rem;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+
+            @media only screen and (max-width: $bp-large) {
+                  flex-direction: column;
+                  align-items: center;
+            
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                  margin-top: -5rem;
+            }
+      }
+
+      &__middle {
+            margin-top: 30rem;
+            display: flex;
+            flex-direction: column;
+            margin-right: 0.7rem;
+            width: 40%;
+            transition: all .2s;
+
+            @media only screen and (max-width: $bp-large) {
+                  margin-top: 10rem;
+            }
+            @media only screen and (max-width: $bp-large) {
+                  order: -1;
+                  margin-bottom: 2rem;
+                  margin-top: 10rem;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                  width: 40%;
+                  margin-bottom: 12rem;
+            }
+            @media only screen and (max-width: $bp-small) {
+                  width: 80%;
+                  margin-bottom: 12rem;
+                  margin-right: 0rem;
+            }
+
+            @media only screen and (max-width:400px) {
+                  width: 100%;
+            }
+      }
+
+      &__left {
+            padding: 3rem;
+            background-color: $color-primary;
+            border-top-left-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+            border-top-right-radius: 20rem;
+            border-bottom-right-radius: 2rem;
+            position: relative;
+            max-width: 53rem;
+            margin-top: 20rem;
+
+            @media only screen and (max-width: 1450px) {
+                  border-radius: 2rem;
+                  line-height: 1.4;
+                  margin-right: 3rem;
+                  margin-top: 0rem;
+            }
+
+            @media only screen and (max-width: $bp-large) {
+                  box-shadow: 0 1rem 10rem rgba(#000, 0.1);
+                  padding: 2rem;
+                  margin-top: 10rem;
+                  margin-bottom: 2rem;
+                  margin-left: 2rem;
+                  margin-right: 2rem;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                  margin-top: 10rem;
+                  margin-bottom: 2rem;
+            }
+            @media only screen and (max-width: $bp-small) {
+                  margin-top: 10rem;
+                  margin-bottom: 2rem;
+            }
+      }
+
+      &__left::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: -100;
+            background-image: url(../img/left-wing.png);
+            background-repeat: no-repeat;
+            top: 0rem;
+            left: 32rem;
+
+            @media only screen and (max-width: 1600px) {
+                  display: none;
+            }
+      }
+
+      &__right {
+            padding: 3rem;
+            background-color: $color-primary;
+            border-top-left-radius: 20rem;
+            border-bottom-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            position: relative;
+            max-width: 53rem;
+            margin-top: 20rem;
+
+            @media only screen and (max-width: 1450px) {
+                  border-radius: 2rem;
+                  line-height: 1.4;
+                  
+                  margin-top: 0rem;
+                  margin-left: 4rem;
+            }
+
+            @media only screen and (max-width: $bp-large) {
+                  box-shadow: 0 1rem 10rem rgba(#000, 0.1);
+                  padding: 2rem;
+                  margin: 2rem;
+                  text-align: left;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                  text-align: left;
+            }
+      }
+
+      &__right::after {
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: -50;
+            background-image: url(../img/right-wing.png);
+            background-repeat: no-repeat;
+            top: 0rem;
+            right: 8rem;
+
+            @media only screen and (max-width: 1600px) {
+                  display: none;
+            }
+      }
+}

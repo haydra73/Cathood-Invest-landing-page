@@ -1,0 +1,213 @@
+.nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 500;
+
+      @media only screen and (max-width: $bp-medium) {
+            justify-content: space-between;
+            align-items: center;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+            
+      }
+
+      &__logo:link,
+      &__logo:visited {
+            text-decoration: none;
+            font-size: 3.6rem;
+            color: $color-primary;
+            text-transform: uppercase;
+            display: inline-block;
+            font-weight: 600;
+
+            @media only screen and (max-width: $bp-medium) {
+                  margin-right: auto;
+            }
+      }
+
+      &__list {
+            display: flex;
+            align-items: center;
+            list-style: none;
+
+            
+      }
+
+      
+
+
+
+      &__link:link,
+      &__link:visited {
+            box-sizing: border-box;
+            text-decoration: none;
+            font-size: 2.2rem;
+            color: $color-grey;
+            display: block;
+            font-weight: 600;
+            margin: 0 2rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+      }
+
+      &__link:after {
+            content: " ";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0.2rem;
+            background-image: linear-gradient(to right, transparent, $color-primary);
+            opacity: 0;
+            transition: all 0.2s;
+      }
+
+      &__link:hover:after {
+            opacity: 1;
+            width: 100%;
+      }
+}
+
+@media only screen and (max-width: $bp-medium) {
+           
+           
+      .nav__list {
+      display: none
+      } 
+
+      
+}
+
+.hamburger {
+      border: none;
+      padding: 2rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      background: none;
+      display: none;
+      transition: all .2s;
+
+      @media only screen and (max-width: $bp-medium) {
+            display: block;
+      }
+
+      span {
+            height: 3px;
+            width: 25px;
+            background-color: $color-grey;
+            display: block;
+            position: relative;
+            border-radius: 10rem;
+      }
+
+      span::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            background-color: $color-grey;
+            transform: translateY(-0.8rem);
+            border-radius: 10rem;
+            transition: all 0.2s;
+      }
+      span::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            background-color: $color-grey;
+            transform: translateY(0.8rem);
+            border-radius: 10rem;
+            transition: all 0.2s;
+      }
+}
+
+#link {
+      display: none;
+      @media only screen and (max-width: $bp-medium) {
+            display: block;
+      }
+}
+#burger {
+  width:30px;
+  height:2px;
+  background:#000;
+  display:inline-block;
+  position:relative;
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
+#burger::before,
+#burger::after {
+  content:'';
+  width:30px;
+  height:2px;
+  background:#000;
+  display:inline-block;
+  position:absolute;
+  transform-origin: center;
+  transition: all 0.3s ease;
+}
+#burger::before {
+  top:-7px;
+}
+#burger::after {
+  top:7px;
+}
+
+#burger.open {
+  background:transparent;
+}
+#burger.open::before {
+  transform: rotate(45deg);
+  top:0;
+}
+#burger.open::after {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+ul.mobile-menu {
+      background:#0044ff;
+      position:absolute;
+      width:100%;
+      left:0;
+      top:100%;
+      padding:10px 0;
+      transform:scaleY(0);
+      transform-origin:center top;
+      transition:all 0.3s ease;
+    }
+    ul.mobile-menu.open {
+      transform:scaleY(1);
+    }
+    ul.mobile-menu li {
+      padding:10px 0;
+      text-align:center;
+      display: block;
+      a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #fff;
+            font-size: 18px;
+      }
+    }
+
+.hamburger:hover {
+      background: none;
+      span::before {
+            transform: translateY(1rem);
+      }
+
+      span::after {
+            transform: translateY(-1rem);
+      }
+}
+
+

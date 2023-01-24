@@ -1,0 +1,95 @@
+
+.table {
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+      background-color: white;
+      width: 100%;
+      margin-top: 10rem;
+      margin-bottom: -2rem;
+
+      &::-webkit-scrollbar {
+            width: 3px;
+            height: 3px;
+            border-radius: 32px;
+        }
+
+      p:not(:last-child) {
+            margin-right: 4rem;
+      }
+
+      p {
+            min-width: 13rem;
+            max-width: 13rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+      }
+}
+
+.transactions {
+
+      &-container {
+            max-width: 130rem;
+            margin: 2rem auto;
+            overflow-x: auto;
+            padding-bottom: 6rem;
+            padding-top: 1rem;
+      }
+
+      &-header {
+            display: flex;
+            padding: 2rem 3.6rem;
+
+            p {
+                  font-weight: 600;
+                  font-size: 3rem;
+                  color: $color-primary;
+            }
+      }
+
+      &-content {
+            font-size: 1.6rem;
+            line-height: 36px;
+            color: $color-grey;
+            min-width: 118rem;
+            font-weight: 400;
+            padding: 0 3.6rem;
+      }
+
+      &-item {
+            display: flex;
+            
+      }
+      &-item:not(:last-child) {
+            
+            border-bottom: 1px solid $color-grey-light;
+      }
+}
+
+.txhash {
+      margin-right: 4rem;
+}
+
+.block {
+      min-width: 7rem;
+      max-width: 7rem;
+}
+
+.arrow {
+      min-width: 2.4rem;
+      max-width: 2.4rem;
+      margin-right: 3rem;
+      display: flex;
+      align-items: center;
+
+      &__svg {
+            margin-left: -1rem;
+            max-width: 3rem;
+      }
+}
+
+.status {
+      font-weight: 600;
+}
+  
+

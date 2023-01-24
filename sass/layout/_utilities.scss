@@ -1,0 +1,29 @@
+.utilities {
+    //  background-image: linear-gradient(transparent 20%, $color-primary 35%, $color-primary 40%);
+      background-position: 200%;
+
+      margin-top: 0rem;
+      position: relative;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+  }
+
+  &::before {
+    
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-image: url(../img/bg-main.png);
+     background-position: center;
+     background-size: cover;
+      top: 8rem;
+      left: 0;
+      z-index: -100;
+
+  }
+}
+
+
