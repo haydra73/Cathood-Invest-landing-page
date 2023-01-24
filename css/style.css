@@ -1574,6 +1574,16 @@ ul.mobile-menu li a {
   padding-top: 15rem;
   overflow: hidden;
 }
+
+/* @media only screen and (500px < width < 1350px) {
+  .rules {
+    display: none;
+  }
+
+  .intro {
+    margin-bottom: 20rem;
+  }
+} */
 @media only screen and (max-width: 75em) {
   .rules {
     margin-bottom: 30rem;
@@ -1640,7 +1650,7 @@ ul.mobile-menu li a {
   display: flex;
   flex-direction: column;
   margin-right: 0.7rem;
-  width: 40%;
+  min-width: 40rem;
   transition: all 0.2s;
 }
 @media only screen and (max-width: 62.5em) {
@@ -1681,7 +1691,7 @@ ul.mobile-menu li a {
   border-top-right-radius: 20rem;
   border-bottom-right-radius: 2rem;
   position: relative;
-  max-width: 53rem;
+  width: 60rem;
   margin-top: 20rem;
 }
 @media only screen and (max-width: 1450px) {
@@ -1700,6 +1710,8 @@ ul.mobile-menu li a {
     margin-bottom: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
+    max-width: 500px;
+    width: auto;
   }
 }
 @media only screen and (max-width: 50em) {
@@ -1738,7 +1750,7 @@ ul.mobile-menu li a {
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
   position: relative;
-  max-width: 53rem;
+  width: 60rem;
   margin-top: 20rem;
 }
 @media only screen and (max-width: 1450px) {
@@ -1755,6 +1767,8 @@ ul.mobile-menu li a {
     padding: 2rem;
     margin: 2rem;
     text-align: left;
+    width: auto;
+    max-width: 500px;
   }
 }
 @media only screen and (max-width: 50em) {
